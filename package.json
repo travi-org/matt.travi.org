@@ -17,7 +17,7 @@
     "coverage": "nyc run-s tests:unit",
     "start": "phenomic start",
     "build": "phenomic build",
-    "deploy": "gh-pages --silent -r \"https://$GH_TOKEN@github.com/travi/admin.travi.org-components.git\" -d dist/",
+    "deploy": "gh-pages --silent -r \"https://$GH_TOKEN@github.com/travi-org/matt.travi.org.git\" -d dist/",
     "commitmsg": "validate-commit-msg",
     "precommit": "npm test"
   },
