@@ -6,7 +6,7 @@
   "private": true,
   "repository": "travi-org/matt.travi.org",
   "bugs": "https://github.com/travi-org/matt.travi.org/issues",
-  "homepage": "https://matt.travi.org",
+  "homepage": "https://travi-org.github.io/matt.travi.org",
   "twitter": "mtravi",
   "scripts": {
     "lint:js": "eslint --ignore-path .gitignore --fix .",
