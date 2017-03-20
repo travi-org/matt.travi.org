@@ -1,4 +1,6 @@
 {
+  "first-line-h1": false,
+  "no-inline-html": false,
   "line_length": {"code_blocks": false},
   "commands-show-output": false
 }
