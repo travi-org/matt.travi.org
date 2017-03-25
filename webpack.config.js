@@ -3,10 +3,8 @@ import path from "path"
 import webpack from "webpack"
 import ExtractTextPlugin from "extract-text-webpack-plugin"
 import { phenomicLoader } from "phenomic"
-import PhenomicLoaderFeedWebpackPlugin
-  from "phenomic/lib/loader-feed-webpack-plugin"
-import PhenomicLoaderSitemapWebpackPlugin
-  from "phenomic/lib/loader-sitemap-webpack-plugin"
+import PhenomicLoaderFeedWebpackPlugin from "phenomic/lib/loader-feed-webpack-plugin"
+import PhenomicLoaderSitemapWebpackPlugin from "phenomic/lib/loader-sitemap-webpack-plugin"
 
 import pkg from "./package.json"
 
@@ -28,12 +26,7 @@ export default (config = {}) => {
     },
     module: {
       noParse: /\.min\.js/,
-      // webpack 1
-      loaders: [
-      // webpack 2
-      /*
       rules: [
-      */
         // *.md => consumed via phenomic special webpack loader
         // allow to generate collection and rss feed.
         {
@@ -78,32 +71,15 @@ export default (config = {}) => {
           test: /\.css$/,
           exclude: /\.global\.css$/,
           include: path.resolve(__dirname, "src"),
-          // webpack 1
-          loader: ExtractTextPlugin.extract(
-            "style-loader",
-            [ `css-loader?modules&localIdentName=${
-              config.production
-              ? "[hash:base64:5]"
-              : "[path][name]--[local]--[hash:base64:5]"
-              }`,
-              "postcss-loader",
-            ].join("!"),
-          ),
-          // webpack 2
-          /*
-          loader: ExtractTextPlugin.extract({
-            fallbackLoader: "style-loader",
-            loader: [
+          use: ExtractTextPlugin.extract({
+            fallback: "style-loader",
+            use: [
               {
-                loader: "css-loader",
-                query: {
+                loader: 'css-loader',
+                options: {
                   modules: true,
-                  localIdentName: (
-                    config.production
-                    ? "[hash:base64:5]"
-                    : "[path][name]--[local]--[hash:base64:5]"
-                  ),
-                },
+                  localIdentName: (config.production ? "[hash:base64:5]" : "[path][name]--[local]--[hash:base64:5]")
+                }
               },
               {
                 loader: "postcss-loader",
@@ -114,19 +90,11 @@ export default (config = {}) => {
               },
             ],
           }),
-          */
         },
         // *.global.css => global (normal) css
         {
           test: /\.global\.css$/,
           include: path.resolve(__dirname, "src"),
-          // webpack 1
-          loader: ExtractTextPlugin.extract(
-            "style-loader",
-            [ "css-loader", "postcss-loader" ].join("!"),
-          ),
-          // webpack 2
-          /*
           loader: ExtractTextPlugin.extract({
             fallbackLoader: "style-loader",
             loader: [
@@ -140,7 +108,6 @@ export default (config = {}) => {
               },
             ],
           }),
-          */
         },
         // ! \\
         // If you want global CSS only, just remove the 2 sections above
@@ -213,12 +180,8 @@ export default (config = {}) => {
       ],
     },
 
-    // webpack 1
-    postcss: postcssPlugins,
-
     plugins: [
       // webpack 2
-      /*
       // You should be able to remove the block below when the following
       // issue has been correctly handled (and postcss-loader supports
       // "plugins" option directly in query, see postcss-loader usage above)
@@ -234,7 +197,6 @@ export default (config = {}) => {
           context: __dirname,
         },
       }),
-      */
 
       new PhenomicLoaderFeedWebpackPlugin({
         // here you define generic metadata for your feed
@@ -260,15 +222,10 @@ export default (config = {}) => {
         site_url: pkg.homepage,
       }),
 
-      // webpack 1
-      new ExtractTextPlugin("[name].[hash].css", { disable: config.dev }),
-      // webpack 2
-      /*
       new ExtractTextPlugin({
         filename: "[name].[hash].css",
         disable: config.dev,
       }),
-      */
 
       ...config.production && [
         // webpack 2
@@ -287,15 +244,6 @@ export default (config = {}) => {
       filename: "[name].[hash].js",
     },
 
-    // webpack 1
-    resolve: {
-      extensions: [ ".js", ".json", "" ],
-      root: [ path.join(__dirname, "node_modules") ],
-    },
-    resolveLoader: { root: [ path.join(__dirname, "node_modules") ] },
-    // webpack 2
-    /*
     resolve: { extensions: [ ".js", ".json" ] },
-    */
   }
 }
