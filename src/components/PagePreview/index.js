@@ -1,4 +1,5 @@
-import React, { PropTypes } from "react"
+import React from "react"
+import {string} from "prop-types"
 import { Link } from "phenomic"
 
 import Button from "../../components/Button"
@@ -33,10 +34,10 @@ const PagePreview = ({ __url, title, date, description }) => {
 }
 
 PagePreview.propTypes = {
-  __url: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  date: PropTypes.string,
-  description: PropTypes.string,
+  __url: string.isRequired,
+  title: string.isRequired,
+  date: string,
+  description: string,
 }
 
 export default PagePreview

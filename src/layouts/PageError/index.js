@@ -1,4 +1,5 @@
-import React, { PropTypes } from "react"
+import React from "react"
+import {oneOfType, number, string} from "prop-types"
 
 import Page from "../Page"
 
@@ -34,8 +35,8 @@ const PageError = ({ error, errorText }) => (
 )
 
 PageError.propTypes = {
-  error: PropTypes.oneOfType([ PropTypes.number, PropTypes.string ]),
-  errorText: PropTypes.string,
+  error: oneOfType([ number, string ]),
+  errorText: string,
 }
 
 PageError.defaultProps = {

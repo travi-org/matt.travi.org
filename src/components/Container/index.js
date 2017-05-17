@@ -1,4 +1,5 @@
-import React, { PropTypes } from "react"
+import React from "react"
+import {node} from "prop-types"
 
 import styles from "./index.css"
 
@@ -9,7 +10,7 @@ const Container = (props) => (
 )
 
 Container.propTypes = {
-  children: PropTypes.node,
+  children: node,
 }
 
 export default Container

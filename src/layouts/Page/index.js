@@ -1,4 +1,5 @@
-import React, { PropTypes } from "react"
+import React from "react"
+import {node, bool, string, object, element} from "prop-types"
 import Helmet from "react-helmet"
 import warning from "warning"
 import { BodyContainer, joinUri, Link } from "phenomic"
@@ -95,18 +96,18 @@ const Page = (
 }
 
 Page.propTypes = {
-  children: PropTypes.node,
-  isLoading: PropTypes.bool,
-  __filename: PropTypes.string,
-  __url: PropTypes.string,
-  head: PropTypes.object.isRequired,
-  body: PropTypes.string,
-  header: PropTypes.element,
-  footer: PropTypes.element,
+  children: node,
+  isLoading: bool,
+  __filename: string,
+  __url: string,
+  head: object.isRequired,
+  body: string,
+  header: element,
+  footer: element,
 }
 
 Page.contextTypes = {
-  metadata: PropTypes.object.isRequired,
+  metadata: object.isRequired,
 }
 
 export default Page
