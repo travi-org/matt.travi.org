@@ -1,4 +1,5 @@
-import React, { PropTypes } from "react"
+import React from "react"
+import {object} from "prop-types";
 
 import LatestPosts from "../../components/LatestPosts"
 import Page from "../Page"
@@ -32,7 +33,7 @@ const Post = (props) => {
 }
 
 Post.propTypes = {
-  head: PropTypes.object.isRequired,
+  head: object.isRequired,
 }
 
 export default Post

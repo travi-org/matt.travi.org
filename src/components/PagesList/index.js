@@ -1,4 +1,5 @@
-import React, { PropTypes } from "react"
+import React from "react"
+import {array} from "prop-types"
 
 import PagePreview from "../PagePreview"
 
@@ -25,7 +26,7 @@ const PagesList = ({ pages }) => {
 }
 
 PagesList.propTypes = {
-  pages: PropTypes.array.isRequired,
+  pages: array.isRequired,
 }
 
 export default PagesList

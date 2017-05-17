@@ -1,4 +1,5 @@
-import React, { PropTypes } from "react"
+import React from "react"
+import {object} from "prop-types"
 import { Link } from "phenomic"
 import Svg from "react-svg-inline"
 
@@ -45,7 +46,7 @@ const Header = (props, { metadata: { pkg } }) => (
 )
 
 Header.contextTypes = {
-  metadata: PropTypes.object.isRequired,
+  metadata: object.isRequired,
 }
 
 export default Header

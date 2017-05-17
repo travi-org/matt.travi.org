@@ -1,4 +1,5 @@
-import React, { PropTypes } from "react"
+import React from "react"
+import {array, number} from "prop-types"
 import enhanceCollection from "phenomic/lib/enhance-collection"
 
 import PagesList from "../../components/PagesList"
@@ -26,11 +27,11 @@ const LatestPosts = (props, { collection }) => {
 }
 
 LatestPosts.propTypes = {
-  numberOfPosts: PropTypes.number,
+  numberOfPosts: number,
 }
 
 LatestPosts.contextTypes = {
-  collection: PropTypes.array.isRequired,
+  collection: array.isRequired,
 }
 
 export default LatestPosts

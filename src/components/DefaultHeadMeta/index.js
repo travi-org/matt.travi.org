@@ -1,4 +1,5 @@
-import React, { PropTypes } from "react"
+import React from "react"
+import {arrayOf, object} from "prop-types"
 import Helmet from "react-helmet"
 
 const DefaultHeadMeta = (props, { metadata: { pkg } }) => (
@@ -30,12 +31,12 @@ const DefaultHeadMeta = (props, { metadata: { pkg } }) => (
 )
 
 DefaultHeadMeta.propTypes = {
-  meta: React.PropTypes.arrayOf(React.PropTypes.object),
-  scripts: React.PropTypes.arrayOf(React.PropTypes.object),
+  meta: arrayOf(object),
+  scripts: arrayOf(object),
 }
 
 DefaultHeadMeta.contextTypes = {
-  metadata: PropTypes.object.isRequired,
+  metadata: object.isRequired,
 }
 
 export default DefaultHeadMeta

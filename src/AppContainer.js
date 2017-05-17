@@ -1,4 +1,5 @@
-import React, { PropTypes } from "react"
+import React from "react"
+import {node} from "prop-types"
 
 import "./index.global.css"
 import "./highlight.global.css"
@@ -21,7 +22,7 @@ const AppContainer = (props) => (
 )
 
 AppContainer.propTypes = {
-  children: PropTypes.node,
+  children: node,
 }
 
 export default AppContainer
