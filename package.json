@@ -151,7 +151,7 @@
     "redux": "3.7.2",
     "style-loader": "^0.18.0",
     "stylelint": "7.13.0",
-    "uglify-js": "3.0.24",
+    "uglify-js": "3.0.25",
     "validate-commit-msg": "2.12.2",
     "warning": "^3.0.0",
     "webpack": "3.3.0",
