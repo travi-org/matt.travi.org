@@ -141,7 +141,7 @@
     "prop-types": "15.6.0",
     "raw-loader": "^0.5.1",
     "react": "15.6.2",
-    "react-dom": "15.6.2",
+    "react-dom": "16.0.0",
     "react-helmet": "5.2.0",
     "react-hot-loader": "3.0.0-beta.7",
     "react-redux": "5.0.6",
