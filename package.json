@@ -103,7 +103,7 @@
     "extends": "./node_modules/phenomic/lib/stylelint-config-recommended/index.js"
   },
   "devDependencies": {
-    "@travi/any": "1.5.1",
+    "@travi/any": "1.6.0",
     "@travi/eslint-config-travi": "1.5.11",
     "babel-cli": "^6.14.0",
     "babel-core": "6.26.0",
