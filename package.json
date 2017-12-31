@@ -16,7 +16,9 @@
     "deploy": "gh-pages --silent -r \"https://$GH_TOKEN@github.com/travi-org/matt.travi.org.git\" -d public/",
     "start": "run-s develop",
     "commitmsg": "validate-commit-msg",
-    "precommit": "npm test"
+    "precommit": "npm test",
+    "greenkeeper:update-lockfile": "greenkeeper-lockfile-update",
+    "greenkeeper:upload-lockfile": "greenkeeper-lockfile-upload"
   },
   "config": {
     "commitizen": {
@@ -29,6 +31,7 @@
     "cz-conventional-changelog": "2.1.0",
     "gh-pages": "1.1.0",
     "globstar": "1.0.0",
+    "greenkeeper-lockfile": "1.12.0",
     "husky": "0.14.3",
     "markdownlint-cli": "0.3.1",
     "npm-run-all": "4.1.2",
