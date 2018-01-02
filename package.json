@@ -10,7 +10,8 @@
   "scripts": {
     "lint:js": "eslint --ignore-path .gitignore --fix .",
     "lint:md": "globstar --node -- markdownlint **/*.md",
-    "test": "run-s lint:* build",
+    "signature:security": "gpg --verify static/.well-known/security.txt.sig static/.well-known/security.txt",
+    "test": "run-s lint:* signature:* build",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "deploy": "gh-pages --silent -r \"https://$GH_TOKEN@github.com/travi-org/matt.travi.org.git\" -d public/",
