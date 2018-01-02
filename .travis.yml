@@ -4,6 +4,7 @@ notifications:
   email: false
 before_script:
 - npm ls >/dev/null
+- curl https://keybase.io/travi/key.asc | gpg --import
 - npm run greenkeeper:update-lockfile
 before_deploy:
 - npm run build
