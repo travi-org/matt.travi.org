@@ -42,7 +42,7 @@
   "dependencies": {
     "@travi/matt.travi.org-components": "1.0.1",
     "gatsby": "1.9.150",
-    "gatsby-link": "1.6.32",
+    "gatsby-link": "1.6.33",
     "gatsby-plugin-google-fonts": "0.0.3",
     "gatsby-plugin-react-helmet": "2.0.3",
     "gatsby-plugin-react-next": "1.0.7",
