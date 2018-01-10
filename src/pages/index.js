@@ -1,5 +1,3 @@
-import React from 'react';
+import {Profile} from '@travi/matt.travi.org-components';
 
-export default function SiteIndex() {
-  return <div>Hello World</div>;
-}
+export default Profile;
