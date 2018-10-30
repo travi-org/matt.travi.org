@@ -40,7 +40,7 @@
     "npm-run-all": "4.1.2"
   },
   "dependencies": {
-    "@travi/matt.travi.org-components": "1.1.1",
+    "@travi/matt.travi.org-components": "2.1.0",
     "gatsby": "1.9.175",
     "gatsby-link": "1.6.35",
     "gatsby-plugin-google-fonts": "0.0.3",
