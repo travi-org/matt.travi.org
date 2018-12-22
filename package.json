@@ -28,7 +28,7 @@
     }
   },
   "devDependencies": {
-    "@travi/any": "1.8.4",
+    "@travi/any": "1.8.5",
     "@travi/eslint-config-travi": "1.6.6",
     "commitlint-config-travi": "1.2.23",
     "cz-conventional-changelog": "2.1.0",
