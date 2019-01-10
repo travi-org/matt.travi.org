@@ -5,7 +5,6 @@ notifications:
 before_script:
 #- npm ls >/dev/null
 - curl https://keybase.io/travi/key.asc | gpg --import
-- npm run greenkeeper:update-lockfile
 before_deploy:
 - npm run build
 - git config --global user.name "$GIT_NAME"
@@ -14,7 +13,6 @@ deploy:
 - skip_cleanup: true
   provider: script
   script: npm run deploy
-after_script: npm run greenkeeper:upload-lockfile
 env:
   global:
     secure: qUAs66CyRaI+FNW7uLLYY2BrnDeiQh1yXkz7RriqMm6u+NTgW2ZWcmvZA2YCNBsEfBkV5Vlr6rYb3MBfAn6rzrfNMAmhlYj2L1QUsZeIO3Ur4rr/pkZrgzebFAWKFYeZP+HRYmoZaYW1OwZgCdXvSYrCC9fmSphhCOoaVSAUG/mDqNxTA21WKvaIhebEkli4oHwp+mcZSdgzIPzsirC/H2G5Rwa2psxCukWCsakj2rQ5YBsfB/f8Eu3deUCi0pTPu7NyzLukh7c5B4vl5Ar81UnVNyp0M3C4ZzScETXnMq34AWGKGAR5wA2pLN6DeNIUO1bFeTCc8jvQz3BMfuxpsZwO+BDexOvYel6O9J9y+TSyJofMhuLhOd3+Yu38C5OAyq/Jm35PYyDrzSxOkqSzrI7sbuYx8ewGRBqA1wOe2QOZfwa/ABL2sLlVQkSokRmxIGGNFVCONMzispUggFML6pkuaWCDH/fpSGsN57wkC0Mk2fiyYEo1jy39OdgVU0HiezfF3VxjGw2u5CDpRhEWpu15f61uTmTHTrqNW0Jv4nXzXS8JlTYMZahErW8pGZ6c8uOz05dSHctCgOVI50Y04xCng+9D7qKmP1H6qHblfV6FZu1x6mhwjyVhnXCcfKsKgm5YYqOyQ9nmVA8TZwkQyBp05f/hNXUDQYPmdGO/+yQ=
