@@ -15,7 +15,7 @@
     "test": "run-s lint:* signature:* build",
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "deploy": "gh-pages --silent -r \"https://$GH_TOKEN@github.com/travi-org/matt.travi.org.git\" -d public/",
+    "deploy": "netlify deploy --site=$NETLIFY_SITE_ID --auth=$NETLIFY_ACCESS_TOKEN --dir=./public --prod",
     "start": "run-s develop",
     "commitmsg": "commitlint -e",
     "precommit": "npm test"
@@ -30,10 +30,10 @@
     "@travi/eslint-config-travi": "1.7.0",
     "commitlint-config-travi": "1.2.31",
     "cz-conventional-changelog": "2.1.0",
-    "gh-pages": "2.0.1",
     "globstar": "1.0.0",
     "husky": "1.3.1",
     "markdownlint-cli": "0.13.0",
+    "netlify-cli": "2.6.1",
     "npm-run-all": "4.1.5"
   },
   "dependencies": {

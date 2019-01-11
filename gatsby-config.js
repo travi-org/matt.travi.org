@@ -8,7 +8,8 @@ module.exports = {
       resolve: 'gatsby-plugin-google-fonts',
       options: {
         fonts: [
-          'Permanent Marker:400'
+          'roboto:300,400,500',
+          'permanent marker:regular&text=Travi'
         ]
       }
     }
