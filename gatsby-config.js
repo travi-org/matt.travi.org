@@ -12,6 +12,10 @@ module.exports = {
           'permanent marker:regular&text=Travi'
         ]
       }
+    },
+    {
+      resolve: 'gatsby-plugin-google-analytics',
+      options: {trackingId: 'UA-2890413-10'}
     }
   ]
 };
