@@ -1,3 +1,7 @@
-headers = [
-  {for = "/*", values = {X-XSS-Protection = "1; mode=block", X-Frame-Options = "DENY"}}
-]
+[[headers]]
+  for = "/*"
+  [headers.values]
+  X-XSS-Protection = "1; mode=block"
+  X-Frame-Options = "DENY"
+  Referrer-Policy = "same-origin"
+  X-Content-Type-Options = "nosniff"
