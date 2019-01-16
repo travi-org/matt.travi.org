@@ -20,7 +20,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-webmention',
       options: {
-        username: 'travi',
+        username: 'matt.travi.org',
         identity: {
           github: 'travi',
           twitter: 'mtravi'
