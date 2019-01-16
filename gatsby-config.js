@@ -16,6 +16,19 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-google-analytics',
       options: {trackingId: 'UA-2890413-10'}
+    },
+    {
+      resolve: 'gatsby-plugin-webmention',
+      options: {
+        username: 'travi',
+        identity: {
+          github: 'travi',
+          twitter: 'mtravi'
+        },
+        mentions: true,
+        pingbacks: true,
+        domain: 'matt.travi.org'
+      }
     }
   ]
 };
