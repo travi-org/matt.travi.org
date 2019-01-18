@@ -10,6 +10,6 @@
   Content-Security-Policy-Report-Only = "default-src 'none'; form-action 'none'; frame-ancestors 'none'; report-uri https://travi.report-uri.com/r/d/csp/wizard"
 
 [[redirects]]
-  from = "http://matt-travi.netlify.com/*"
-  to = "http://matt.travi.org/:splat"
+  from = "https://matt-travi.netlify.com/*"
+  to = "https://matt.travi.org/:splat"
   force = true
