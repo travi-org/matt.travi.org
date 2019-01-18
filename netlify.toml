@@ -12,3 +12,4 @@
 [[redirects]]
   from = "http://matt-travi.netlify.com/*"
   to = "http://matt.travi.org/:splat"
+  force = true
