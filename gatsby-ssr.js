@@ -1,9 +1,9 @@
-import React from 'react';
-import {renderToString} from 'react-dom/server';
-import {SheetsRegistry} from 'jss';
-import {JssProvider} from 'react-jss';
-import {createGenerateClassName} from '@material-ui/core/styles';
-import {theme} from '@travi/matt.travi.org-components';
+const React = require('react');
+const {renderToString} = require('react-dom/server');
+const {SheetsRegistry} = require('jss');
+const JssProvider = require('react-jss').default;
+const {createGenerateClassName} = require('@material-ui/core/styles');
+const theme = require('@travi/matt.travi.org-components');
 
 function createPageContext() {
   return {
@@ -17,7 +17,7 @@ function createPageContext() {
   };
 }
 
-export default function getPageContext() {
+function getPageContext() {
   // Make sure to create a new context for every server-side request so that data
   // isn't shared between connections (which would be bad).
 
@@ -33,7 +33,7 @@ export default function getPageContext() {
   // return global.__INIT_MATERIAL_UI__;
 }
 
-export function replaceRenderer({bodyComponent, replaceBodyHTMLString, setHeadComponents}) {
+function replaceRenderer({bodyComponent, replaceBodyHTMLString, setHeadComponents}) {
   // Get the context of the page to collected side effects.
   const muiPageContext = getPageContext();
 
@@ -51,3 +51,5 @@ export function replaceRenderer({bodyComponent, replaceBodyHTMLString, setHeadCo
     />
   ]);
 }
+
+exports.replaceRenderer = replaceRenderer;
