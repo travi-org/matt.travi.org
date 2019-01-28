@@ -41,7 +41,7 @@
     "@travi/matt.travi.org-components": "2.9.1",
     "gatsby": "2.0.99",
     "gatsby-link": "2.0.9",
-    "gatsby-plugin-google-analytics": "2.0.11",
+    "gatsby-plugin-google-analytics": "2.0.12",
     "gatsby-plugin-google-fonts": "0.0.4",
     "gatsby-plugin-react-helmet": "3.0.5",
     "gatsby-plugin-webmention": "0.0.9",
