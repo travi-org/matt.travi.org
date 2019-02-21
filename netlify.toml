@@ -7,7 +7,7 @@
   X-Content-Type-Options = "nosniff"
   Report-To = '{"group":"default","max_age":31536000,"endpoints":[{"url":"https://travi.report-uri.com/a/d/g"}],"include_subdomains":true}'
   NEL = '{"report_to":"default","max_age":31536000,"include_subdomains":true}'
-  Content-Security-Policy-Report-Only = "default-src 'none'; form-action 'none'; frame-ancestors 'none'; report-uri https://travi.report-uri.com/r/d/csp/wizard"
+  Content-Security-Policy-Report-Only = "default-src 'none'; style-src fonts.googleapis.com; font-src fonts.gstatic.com; form-action 'none'; frame-ancestors 'none'; report-uri https://travi.report-uri.com/r/d/csp/wizard"
 
 [[redirects]]
   from = "https://matt-travi.netlify.com/*"
