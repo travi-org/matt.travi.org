@@ -29,6 +29,7 @@ module.exports = {
         pingbacks: true,
         domain: 'matt.travi.org'
       }
-    }
+    },
+    'gatsby-plugin-material-ui'
   ]
 };

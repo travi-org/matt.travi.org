@@ -20,7 +20,11 @@ export default function SiteLayout({children}) {
       }
       render={data => (
         <Layout>
-          <Helmet titleTemplate={`%s | ${data.site.siteMetadata.title}`} defaultTitle={data.site.siteMetadata.title} />
+          <Helmet
+            titleTemplate={`%s | ${data.site.siteMetadata.title}`}
+            defaultTitle={data.site.siteMetadata.title}
+            htmlAttributes={{lang: 'en'}}
+          />
           {children}
         </Layout>
       )}
