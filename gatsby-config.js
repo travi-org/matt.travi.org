@@ -31,6 +31,9 @@ module.exports = {
       }
     },
     'gatsby-plugin-material-ui',
-    'gatsby-plugin-favicon'
+    {
+      resolve: `gatsby-plugin-favicon`,
+      options: {theme_color: '#c80000'}
+    }
   ]
 };
