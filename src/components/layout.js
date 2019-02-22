@@ -24,7 +24,9 @@ export default function SiteLayout({children}) {
             titleTemplate={`%s | ${data.site.siteMetadata.title}`}
             defaultTitle={data.site.siteMetadata.title}
             htmlAttributes={{lang: 'en'}}
-          />
+          >
+            <meta name="theme-color" content="#c80000" />
+          </Helmet>
           {children}
         </Layout>
       )}
