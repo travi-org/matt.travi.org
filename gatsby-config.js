@@ -30,6 +30,7 @@ module.exports = {
         domain: 'matt.travi.org'
       }
     },
-    'gatsby-plugin-material-ui'
+    'gatsby-plugin-material-ui',
+    'gatsby-plugin-favicon'
   ]
 };
