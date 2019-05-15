@@ -34,6 +34,10 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-favicon',
       options: {theme_color: '#c80000'}
+    },
+    {
+      resolve: 'gatsby-plugin-webpack-bundle-analyzer',
+      options: {production: true, generateStatsFile: true, analyzerMode: 'static', openAnalyzer: false}
     }
   ]
 };

@@ -47,6 +47,7 @@
     "gatsby-plugin-material-ui": "1.2.4",
     "gatsby-plugin-react-helmet": "3.0.12",
     "gatsby-plugin-webmention": "0.1.0",
+    "gatsby-plugin-webpack-bundle-analyzer": "1.0.5",
     "jss": "9.8.7",
     "prop-types": "15.7.2",
     "react": "16.8.6",
