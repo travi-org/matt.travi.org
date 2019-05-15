@@ -16,6 +16,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "deploy": "netlify deploy --site=$NETLIFY_SITE_ID --auth=$NETLIFY_ACCESS_TOKEN --dir=./public --prod",
+    "packtracker:publish": "packtracker-upload --stats=resources/js/stats.json",
     "start": "run-s develop",
     "commitmsg": "commitlint -e",
     "precommit": "npm test"
@@ -26,6 +27,7 @@
     }
   },
   "devDependencies": {
+    "@packtracker/webpack-plugin": "2.0.1",
     "@travi/any": "2.0.0",
     "@travi/eslint-config-travi": "1.8.0",
     "commitlint-config-travi": "1.2.43",
