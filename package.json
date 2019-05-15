@@ -16,7 +16,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "deploy": "netlify deploy --site=$NETLIFY_SITE_ID --auth=$NETLIFY_ACCESS_TOKEN --dir=./public --prod",
-    "packtracker:publish": "packtracker-upload --stats=resources/js/stats.json",
+    "packtracker:publish": "packtracker-upload --stats=public/stats.json",
     "start": "run-s develop",
     "commitmsg": "commitlint -e",
     "precommit": "npm test"
