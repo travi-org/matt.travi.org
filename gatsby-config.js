@@ -37,7 +37,13 @@ module.exports = {
     },
     {
       resolve: 'gatsby-plugin-webpack-bundle-analyzer',
-      options: {production: true, generateStatsFile: true, analyzerMode: 'static', openAnalyzer: false}
+      options: {
+        production: true,
+        generateStatsFile: true,
+        analyzerMode: 'static',
+        openAnalyzer: false,
+        disable: 'development' === process.env.NODE_ENV
+      }
     }
   ]
 };

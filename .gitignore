@@ -3,6 +3,9 @@ lib/
 .nyc_output/
 dist/
 
+cypress/videos
+cypress/screenshots
+
 # Gatsby directories
 .cache/
 public/

@@ -1,7 +1,12 @@
-language: node_js
 dist: trusty
+language: node_js
+cache:
+  directories:
+    - ~/.npm
+    - ~/.cache
 notifications:
   email: false
+
 before_script:
 - curl https://keybase.io/travi/key.asc | gpg --import
 after_success: npm run packtracker:publish
@@ -13,6 +18,7 @@ deploy:
 - skip_cleanup: true
   provider: script
   script: npm run deploy
+
 env:
   global:
   - FORCE_COLOR=1
