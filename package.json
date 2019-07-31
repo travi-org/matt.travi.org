@@ -15,7 +15,7 @@
     "sign:security": "gpg --armor --output static/.well-known/security.txt.sig --detach-sig static/.well-known/security.txt",
     "signature:security": "gpg --verify static/.well-known/security.txt.sig static/.well-known/security.txt",
     "test": "npm-run-all --print-label --parallel lint:* --parallel test:* --serial signature:* build",
-    "test:e2e": "CYPRESS_SUPPORT=y start-server-and-test develop http://localhost:8000 'npm run cypress:run --x ${CYPRESS_RECORD_KEY:+--record}'",
+    "test:e2e": "CYPRESS_SUPPORT=y start-server-and-test develop http://localhost:8000 'npm run cypress:run -- ${CYPRESS_RECORD_KEY:+--record}'",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
     "build": "gatsby build",
