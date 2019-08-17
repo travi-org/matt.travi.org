@@ -1,7 +1,7 @@
 describe('Smoke Test', () => {
   it('Visit the root page', () => {
     cy.visit('/');
-    cy.waitForRouteChange();
-    expect(true).to.equal(true);
+
+    cy.get('main h1').should('have.text', 'Matt Travi');
   });
 });
