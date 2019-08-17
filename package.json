@@ -41,7 +41,7 @@
     "cypress": "3.4.1",
     "cz-conventional-changelog": "3.0.2",
     "gatsby-cypress": "0.2.4",
-    "husky": "3.0.3",
+    "husky": "3.0.4",
     "netlify-cli": "2.12.0",
     "npm-run-all": "4.1.5",
     "remark-cli": "7.0.0",
