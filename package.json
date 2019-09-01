@@ -51,7 +51,7 @@
   "dependencies": {
     "@material-ui/core": "4.3.2",
     "@material-ui/styles": "4.3.0",
-    "@travi/matt.travi.org-components": "3.0.9",
+    "@travi/matt.travi.org-components": "3.0.10",
     "gatsby": "2.13.67",
     "gatsby-link": "2.2.5",
     "gatsby-plugin-favicon": "3.1.6",
