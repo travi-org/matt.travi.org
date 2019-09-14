@@ -8,7 +8,9 @@ notifications:
   email: false
 before_script:
 - curl https://keybase.io/travi/key.asc | gpg --import
-after_success: npm run packtracker:publish
+after_success:
+- npm run packtracker:publish
+- npm run snapshot
 before_deploy:
 - npm run build
 - git config --global user.name "$GIT_NAME"
