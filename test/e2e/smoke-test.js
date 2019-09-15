@@ -11,5 +11,7 @@ describe('Smoke Test', () => {
     cy.get('header button').click();
 
     cy.get('div.MuiDrawer-root').should('be.visible');
+
+    cy.percySnapshot();
   });
 });

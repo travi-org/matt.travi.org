@@ -19,7 +19,9 @@
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
     "build": "gatsby build",
-    "snapshot": "npx percy snapshot public/ --ignore-files report.html",
+    "snapshot": "run-p snapshot:*",
+    "snapshot:static": "npx percy snapshot public/ --ignore-files report.html",
+    "snapshot:e2e": "percy exec -- run-s test:e2e",
     "develop": "gatsby develop",
     "deploy": "netlify deploy --site=$NETLIFY_SITE_ID --auth=$NETLIFY_ACCESS_TOKEN --dir=./public --prod",
     "packtracker:publish": "packtracker-upload --stats=public/stats.json",
@@ -34,6 +36,7 @@
   },
   "devDependencies": {
     "@packtracker/webpack-plugin": "2.2.0",
+    "@percy/cypress": "2.0.1",
     "@travi/any": "2.0.4",
     "@travi/eslint-config-cypress": "1.0.3",
     "@travi/eslint-config-travi": "1.8.5",
