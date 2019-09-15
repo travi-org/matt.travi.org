@@ -21,7 +21,7 @@
     "build": "gatsby build",
     "snapshot": "run-p snapshot:*",
     "snapshot:static": "npx percy snapshot public/ --ignore-files report.html",
-    "snapshot:e2e": "percy exec -- run-s test:e2e",
+    "snapshot:e2e": "percy exec --port=5339 -- run-s test:e2e",
     "develop": "gatsby develop",
     "deploy": "netlify deploy --site=$NETLIFY_SITE_ID --auth=$NETLIFY_ACCESS_TOKEN --dir=./public --prod",
     "packtracker:publish": "packtracker-upload --stats=public/stats.json",
