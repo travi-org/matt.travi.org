@@ -16,7 +16,7 @@ before_deploy:
 - git config --global user.name "$GIT_NAME"
 - git config --global user.email "$GIT_EMAIL"
 deploy:
-- skip_cleanup: true
+- edge: true
   provider: script
   script: npm run deploy
 env:
