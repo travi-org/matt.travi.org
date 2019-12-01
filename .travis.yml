@@ -6,6 +6,8 @@ cache:
   - "~/.cache"
 notifications:
   email: false
+addons:
+  chrome: stable
 before_script:
 - curl https://keybase.io/travi/key.asc | gpg --import
 after_success:
