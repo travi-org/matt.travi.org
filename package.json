@@ -41,7 +41,7 @@
   "devDependencies": {
     "@packtracker/webpack-plugin": "2.2.0",
     "@percy/cypress": "2.2.0",
-    "@travi/any": "2.0.6",
+    "@travi/any": "2.0.7",
     "@travi/eslint-config-cypress": "1.0.9",
     "@travi/eslint-config-travi": "1.8.6",
     "ban-sensitive-files": "1.9.2",
