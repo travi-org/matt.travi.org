@@ -3,7 +3,7 @@
 my profile
 
 <!-- status badges -->
-[![Build Status](https://img.shields.io/travis/travi-org/matt.travi.org.svg?style=flat)](https://travis-ci.org/travi-org/matt.travi.org)
+[![Build Status](https://img.shields.io/travis/com/travi-org/matt.travi.org.svg?style=flat)](https://travis-ci.com/travi-org/matt.travi.org)
 [![Uptime Robot ratio (30 days)](https://img.shields.io/uptimerobot/ratio/m781503152-aae44941a69371a03b025fc5.svg)](https://status.travi.org)
 
 ## Usage
