@@ -1,3 +1,5 @@
+const brandRules = require('@travi/brand');
+
 module.exports = {
   siteMetadata: {
     title: 'Matt Travi'
@@ -32,8 +34,17 @@ module.exports = {
     },
     'gatsby-plugin-material-ui',
     {
-      resolve: 'gatsby-plugin-favicon',
-      options: {theme_color: '#c80000'}
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: 'Travi.org',
+        short_name: 'Travi',
+        description: 'Matt Travi',
+        lang: 'en',
+        start_url: '/',
+        display: 'minimal-ui',
+        theme_color: brandRules.colors['brand-palette']['dark-red'],
+        icon: 'node_modules/@travi/brand/dist/img/square-logo.svg'
+      }
     },
     {
       resolve: 'gatsby-plugin-webpack-bundle-analyzer',
