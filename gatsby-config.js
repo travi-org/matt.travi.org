@@ -32,7 +32,12 @@ module.exports = {
         domain: 'matt.travi.org'
       }
     },
-    'gatsby-plugin-material-ui',
+    {
+      resolve: 'gatsby-plugin-material-ui',
+      options: {
+        stylesProvider: {injectFirst: true}
+      }
+    },
     'gatsby-plugin-emotion',
     {
       resolve: 'gatsby-plugin-manifest',
