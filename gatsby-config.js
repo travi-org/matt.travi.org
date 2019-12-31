@@ -33,6 +33,7 @@ module.exports = {
       }
     },
     'gatsby-plugin-material-ui',
+    'gatsby-plugin-emotion',
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
