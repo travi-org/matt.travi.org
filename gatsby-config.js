@@ -1,3 +1,4 @@
+const polished = require('polished');
 const brandRules = require('@travi/brand');
 
 module.exports = {
@@ -48,7 +49,7 @@ module.exports = {
         lang: 'en',
         start_url: '/',
         display: 'minimal-ui',
-        theme_color: brandRules.colors['brand-palette']['dark-red'],
+        theme_color: polished.rgb(brandRules.colors['brand-palette']['dark-red']),
         icon: 'node_modules/@travi/brand/dist/img/square-logo.svg'
       }
     },
