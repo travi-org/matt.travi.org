@@ -5,7 +5,7 @@ import SiteLayout from '../components/layout';
 export default function () {
   return (
     <SiteLayout>
-      <Contact />
+      <Contact name="contact" />
     </SiteLayout>
   );
 }
