@@ -13,7 +13,8 @@ module.exports = {
         fonts: [
           'roboto:300,400,500',
           'permanent marker:regular&text=Travi'
-        ]
+        ],
+        display: 'swap'
       }
     },
     {
