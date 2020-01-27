@@ -33,9 +33,7 @@
     "predeploy:netlify": "run-s build",
     "deploy:netlify": "netlify deploy --dir=./public --prod",
     "packtracker:publish": "packtracker-upload --stats=public/stats.json",
-    "start": "run-s develop",
-    "commitmsg": "commitlint -e",
-    "precommit": "npm test"
+    "start": "run-s develop"
   },
   "config": {
     "commitizen": {
