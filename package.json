@@ -42,7 +42,7 @@
   },
   "devDependencies": {
     "@packtracker/webpack-plugin": "2.2.0",
-    "@percy/cypress": "2.2.0",
+    "@percy/cypress": "2.3.0",
     "@travi/any": "2.0.7",
     "@travi/eslint-config-cypress": "1.0.11",
     "@travi/eslint-config-travi": "1.8.7",
