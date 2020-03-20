@@ -31,7 +31,7 @@
     "serve": "gatsby serve",
     "develop": "gatsby develop",
     "predeploy:netlify": "run-s build",
-    "deploy:netlify": "netlify deploy --dir=./public --prod",
+    "deploy:netlify": "netlify deploy --dir=./public",
     "packtracker:publish": "packtracker-upload --stats=public/stats.json",
     "start": "run-s develop"
   },
