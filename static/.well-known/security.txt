@@ -1,3 +1,4 @@
 Contact: https://matt.travi.org/contact
 Encryption: https://keybase.io/travi/key.asc
+Canonical: https://matt.travi.org/.well-known/security.txt
 Signature: https://matt.travi.org/.well-known/security.txt.sig
