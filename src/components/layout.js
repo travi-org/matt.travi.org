@@ -1,5 +1,5 @@
 import React from 'react';
-import Helmet from 'react-helmet';
+import {Helmet} from 'react-helmet';
 import {node} from 'prop-types';
 import {Layout} from '@travi/travi.org-theme-components';
 import {graphql, StaticQuery} from 'gatsby';
