@@ -1,10 +1,9 @@
 version: ~> 1.0
-language: node_js
 import:
-  - source: travi-org/.travis-ci:authenticated-netlify-deploy.yml
+  - form8ion/.travis-ci:node.yml
+  - travi-org/.travis-ci:authenticated-netlify-deploy.yml
 cache:
   directories:
-  - "~/.npm"
   - "~/.cache"
 notifications:
   email: false
@@ -17,8 +16,6 @@ after_success:
 - npm run snapshot
 env:
   global:
-  - FORCE_COLOR=1
-  - NPM_CONFIG_COLOR=always
   - PT_UPLOAD=true
   - PT_BRANCH=$TRAVIS_BRANCH
   - secure: yHzS44Jf5gLVtr5f0S9wN9xXcNGlGx9J/bejdqUVbKVEQPLiQNQjYPsweAVyUnpff95osCH3+G7lfxp/CaxHiQ5pJ6m+fxrajJKfyTll9ZNDkLwznOmTYKgKpRafiW1nDNpf9KAuK961kOg4oZbWJ/f7HNVCHSDKsDfmZ/OW/YEJgEYHMekNOe473DH1f6bLkwYNwjXL23zUvfanr3AL24K8tH8pYTsFGhAmvCgk9jiH5RyYgyiUW7jtbtkZc8bPiFYeFuoK/gKdqTWcWqaHfaEsj3MHkI8RB+bncx1pAnvNBv665zxhIljDnEy0jU3ce7pxA8GWV+2Aa0vW3eh9ZFAu6aCoxpT49WpdUKkTbyCNxKYoJ3mz6X7OQTOCkIq2wQAr1gwARePCowo5c/tMsi3dzvxT5GtULYbxcM45IRPTmUGoTpUsR0THbJ6Nd03Gxqmvs98yfktW2OPFbAGqRp0WQSg8lXJwmLDwYMHLOoss+QTjC5pqyhGMCmZFY662EWSvBRpybZb5bRo8KA/O+PP9Tq1k+HIENsIYALOCgxyyHQT71gstWTfNKU4ZCe/8wTOva8gy6IlGsjR9TLP1+/UcXe7ExckdCLavxSpJ197oN3DuQfoGqA+Vo9OvWKSu/23JWRYxx6vAGQGwpGA6hViSiyLAKfGBGkmw4qZ6HQQ=
