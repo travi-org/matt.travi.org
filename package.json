@@ -8,7 +8,7 @@
   "bugs": "https://github.com/travi-org/matt.travi.org/issues",
   "homepage": "https://travi-org.github.io/matt.travi.org",
   "scripts": {
-    "clean": "rimraf public/",
+    "clean": "rimraf public/ .cache/",
     "lint:js": "eslint --ignore-path .gitignore --fix .",
     "lint:md": "remark . --frail",
     "lint:travis": "travis-lint .travis.yml",
