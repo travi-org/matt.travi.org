@@ -33,7 +33,9 @@
     "predeploy:netlify": "run-s build",
     "deploy:netlify": "netlify deploy --dir=./public",
     "packtracker:publish": "packtracker-upload --stats=public/stats.json",
-    "start": "run-s develop"
+    "start": "run-s develop",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "config": {
     "commitizen": {
@@ -80,6 +82,8 @@
     "prop-types": "15.7.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "react-helmet": "6.0.0"
-  }
+    "react-helmet": "6.0.0",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
