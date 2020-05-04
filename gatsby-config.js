@@ -63,6 +63,27 @@ module.exports = {
         openAnalyzer: false,
         disable: 'development' === process.env.NODE_ENV
       }
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'uses',
+        path: `${__dirname}/content`
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-page-creator',
+      options: {
+        path: `${__dirname}/content`
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-mdx',
+      options: {
+        defaultLayouts: {
+          default: require.resolve('./src/components/layout')
+        }
+      }
     }
   ]
 };
