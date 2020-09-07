@@ -53,7 +53,7 @@
     "cypress": "5.1.0",
     "cz-conventional-changelog": "3.3.0",
     "gatsby-cypress": "0.4.10",
-    "husky": "4.2.5",
+    "husky": "4.3.0",
     "is-website-vulnerable": "1.14.4",
     "lockfile-lint": "4.3.7",
     "netlify-cli": "2.61.2",
