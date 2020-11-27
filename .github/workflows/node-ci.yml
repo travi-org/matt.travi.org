@@ -40,7 +40,8 @@ jobs:
         env:
           PT_PROJECT_TOKEN: ${{ secrets.PT_PROJECT_TOKEN }}
           PT_BRANCH: ${{ steps.extract_branch.outputs.branch }}
-  release:
+  deploy:
+    if: github.ref == 'refs/heads/master'
     needs: verify
     runs-on: ubuntu-latest
     steps:
@@ -53,8 +54,7 @@ jobs:
         with:
           node-version: '${{ steps.nvm.outputs.NVMRC }}'
       - uses: bahmutov/npm-install@v1
-      - name: semantic-release
-        run: npx semantic-release
+      - run: npm run deploy:netlify
         env:
-          GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
-          NPM_TOKEN: '${{ secrets.NPM_PUBLISH_TOKEN }}'
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
