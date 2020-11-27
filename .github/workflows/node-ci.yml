@@ -16,6 +16,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: Import Public PGP Key
+        run: curl https://keybase.io/travi/key.asc | gpg --import
       - name: Read .nvmrc
         run: 'echo ::set-output name=NVMRC::$(cat .nvmrc)'
         id: nvm
