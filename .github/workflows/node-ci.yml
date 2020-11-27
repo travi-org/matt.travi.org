@@ -16,6 +16,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
       - name: Import Public PGP Key
         run: curl https://keybase.io/travi/key.asc | gpg --import
       - name: Read .nvmrc
