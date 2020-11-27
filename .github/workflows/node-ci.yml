@@ -29,6 +29,8 @@ jobs:
           node-version: '${{ steps.nvm.outputs.NVMRC }}'
       - uses: bahmutov/npm-install@v1
       - run: npm test
+        env:
+          CYPRESS_RECORD_KEY: '${{ secrets.CYPRESS_RECORD_KEY }}'
       - name: report webpack stats
         run: npm run packtracker:publish
         env:
