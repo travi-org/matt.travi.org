@@ -84,7 +84,7 @@
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-helmet": "6.1.0",
-    "snyk": "1.434.1"
+    "snyk": "1.434.2"
   },
   "snyk": true
 }
