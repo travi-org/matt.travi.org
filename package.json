@@ -86,7 +86,7 @@
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-helmet": "6.1.0",
-    "snyk": "1.520.0"
+    "snyk": "1.521.0"
   },
   "snyk": true
 }
