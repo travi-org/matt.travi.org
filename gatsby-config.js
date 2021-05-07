@@ -61,7 +61,7 @@ module.exports = {
         generateStatsFile: true,
         analyzerMode: 'static',
         openAnalyzer: false,
-        disable: 'development' === process.env.NODE_ENV
+        disable: 'development' === process.env.NODE_ENV || process.env.CYPRESS_INSTALL_BINARY === 0
       }
     },
     {
