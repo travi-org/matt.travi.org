@@ -55,16 +55,6 @@ module.exports = {
       }
     },
     {
-      resolve: 'gatsby-plugin-webpack-bundle-analyzer',
-      options: {
-        production: true,
-        generateStatsFile: true,
-        analyzerMode: 'static',
-        openAnalyzer: false,
-        disable: 'development' === process.env.NODE_ENV || process.env.CYPRESS_INSTALL_BINARY === 0
-      }
-    },
-    {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'uses',
