@@ -19,7 +19,7 @@ module.exports = {
     },
     {
       resolve: 'gatsby-plugin-google-analytics',
-      options: {trackingId: 'UA-2890413-10'}
+      options: { trackingId: 'UA-2890413-10' }
     },
     {
       resolve: 'gatsby-plugin-webmention',
@@ -37,7 +37,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-material-ui',
       options: {
-        stylesProvider: {injectFirst: true}
+        stylesProvider: { injectFirst: true }
       }
     },
     'gatsby-plugin-emotion',
@@ -52,6 +52,16 @@ module.exports = {
         display: 'minimal-ui',
         theme_color: polished.rgb(brandRules.colors['brand-palette']['dark-red']),
         icon: 'node_modules/@travi/brand/dist/img/square-logo.svg'
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-webpack-bundle-analyser-v2',
+      options: {
+        production: true,
+        generateStatsFile: process.env.CYPRESS_INSTALL_BINARY !== 0,
+        analyzerMode: 'static',
+        openAnalyzer: false,
+        disable: 'development' === process.env.NODE_ENV
       }
     },
     {
