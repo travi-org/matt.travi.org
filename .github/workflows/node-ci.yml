@@ -35,11 +35,11 @@ jobs:
         shell: bash
         run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
         id: extract_branch
-          #      - name: report webpack stats
-          #        run: npm run packtracker:publish
-          #        env:
-          #          PT_PROJECT_TOKEN: ${{ secrets.PT_PROJECT_TOKEN }}
-          #          PT_BRANCH: ${{ steps.extract_branch.outputs.branch }}
+      - name: report webpack stats
+        run: npm run packtracker:publish
+        env:
+          PT_PROJECT_TOKEN: ${{ secrets.PT_PROJECT_TOKEN }}
+          PT_BRANCH: ${{ steps.extract_branch.outputs.branch }}
   deploy:
     if: github.ref == 'refs/heads/master'
     needs: verify
