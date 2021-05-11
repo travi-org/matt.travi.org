@@ -19,7 +19,7 @@ module.exports = {
     },
     {
       resolve: 'gatsby-plugin-google-analytics',
-      options: { trackingId: 'UA-2890413-10' }
+      options: {trackingId: 'UA-2890413-10'}
     },
     {
       resolve: 'gatsby-plugin-webmention',
@@ -37,7 +37,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-material-ui',
       options: {
-        stylesProvider: { injectFirst: true }
+        stylesProvider: {injectFirst: true}
       }
     },
     'gatsby-plugin-emotion',
@@ -57,11 +57,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-webpack-bundle-analyser-v2',
       options: {
-        production: true,
         generateStatsFile: 0 !== process.env.CYPRESS_INSTALL_BINARY,
-        analyzerMode: 'development' === process.env.NODE_ENV || 0 === process.env.CYPRESS_INSTALL_BINARY
-          ? 'disabled'
-          : 'static',
+        analyzerMode: 'disabled',
         openAnalyzer: false
       }
     },
