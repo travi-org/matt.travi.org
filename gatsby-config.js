@@ -58,10 +58,11 @@ module.exports = {
       resolve: 'gatsby-plugin-webpack-bundle-analyser-v2',
       options: {
         production: true,
-        generateStatsFile: process.env.CYPRESS_INSTALL_BINARY !== 0,
-        analyzerMode: 'static',
-        openAnalyzer: false,
-        disable: 'development' === process.env.NODE_ENV
+        generateStatsFile: 0 !== process.env.CYPRESS_INSTALL_BINARY,
+        analyzerMode: 'development' === process.env.NODE_ENV || 0 === process.env.CYPRESS_INSTALL_BINARY
+          ? 'disabled'
+          : 'static',
+        openAnalyzer: false
       }
     },
     {
