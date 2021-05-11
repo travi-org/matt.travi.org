@@ -54,15 +54,15 @@ module.exports = {
         icon: 'node_modules/@travi/brand/dist/img/square-logo.svg'
       }
     },
-    {
-      resolve: 'gatsby-plugin-webpack-bundle-analyser-v2',
-      options: {
-        generateStatsFile: 0 !== process.env.CYPRESS_INSTALL_BINARY,
-        analyzerMode: 'disabled',
-        openAnalyzer: false,
-        disabled: true
-      }
-    },
+    // {
+    //   resolve: 'gatsby-plugin-webpack-bundle-analyser-v2',
+    //   options: {
+    //     generateStatsFile: 0 !== process.env.CYPRESS_INSTALL_BINARY,
+    //     analyzerMode: 'disabled',
+    //     openAnalyzer: false,
+    //     disabled: true
+    //   }
+    // },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
