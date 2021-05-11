@@ -25,7 +25,7 @@
     "build": "gatsby build",
     "presnapshot": "run-s build",
     "snapshot": "PERCY_PARALLEL_NONCE=`date +%s` PERCY_PARALLEL_TOTAL=2 run-s snapshot:*",
-    "snapshot:static": "percy snapshot public/ --ignore-files report.html",
+    "snapshot:static": "percy snapshot public/ --ignore=report.html",
     "snapshot:e2e": "percy exec -- start-server-and-test serve http://localhost:9000 'run-s test:served:e2e'",
     "preserve": "run-s build",
     "serve": "gatsby serve",
