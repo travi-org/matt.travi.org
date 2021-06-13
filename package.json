@@ -70,7 +70,7 @@
     "@mdx-js/mdx": "1.6.22",
     "@mdx-js/react": "1.6.22",
     "@travi/brand": "1.0.0",
-    "@travi/matt.travi.org-components": "4.1.10",
+    "@travi/matt.travi.org-components": "4.1.11",
     "@travi/travi.org-theme-components": "1.2.0",
     "gatsby": "3.4.2",
     "gatsby-link": "3.4.0",
