@@ -46,7 +46,7 @@
     "@packtracker/webpack-plugin": "2.3.0",
     "@percy/cli": "1.0.0-beta.58",
     "@percy/cypress": "3.1.0",
-    "@travi/any": "2.0.16",
+    "@travi/any": "2.0.17",
     "@travi/eslint-config-cypress": "1.0.27",
     "@travi/eslint-config-travi": "1.8.8",
     "ban-sensitive-files": "1.9.15",
