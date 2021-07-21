@@ -55,7 +55,7 @@
     "cz-conventional-changelog": "3.3.0",
     "gatsby-cypress": "1.10.0",
     "gatsby-plugin-webpack-bundle-analyser-v2": "1.1.24",
-    "husky": "6.0.0",
+    "husky": "7.0.1",
     "is-website-vulnerable": "1.14.8",
     "lockfile-lint": "4.6.2",
     "netlify-cli": "4.4.4",
