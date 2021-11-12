@@ -55,7 +55,7 @@
     "cypress": "9.0.0",
     "cz-conventional-changelog": "3.3.0",
     "gatsby-cypress": "2.1.0",
-    "gatsby-plugin-webpack-bundle-analyser-v2": "1.1.25",
+    "gatsby-plugin-webpack-bundle-analyser-v2": "1.1.26",
     "husky": "7.0.4",
     "is-website-vulnerable": "1.14.8",
     "lockfile-lint": "4.6.2",
