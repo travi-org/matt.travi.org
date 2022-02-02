@@ -13,8 +13,6 @@
 // https://on.cypress.io/configuration
 // ***********************************************************
 
-import 'gatsby-cypress/commands';
-
 // Import commands.js using ES2015 syntax:
 import './commands';
 
