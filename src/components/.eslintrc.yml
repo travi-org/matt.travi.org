@@ -1,5 +1,0 @@
-extends: '@travi/travi/rules/react'
-
-rules:
-  react/jsx-no-bind: off
-  
