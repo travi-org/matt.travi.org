@@ -49,7 +49,7 @@
     "@percy/cli": "1.0.0-beta.75",
     "@percy/cypress": "3.1.1",
     "@travi/any": "2.0.19",
-    "@travi/babel-preset": "3.0.76",
+    "@travi/babel-preset": "3.0.77",
     "@travi/eslint-config": "1.0.94",
     "@travi/eslint-config-cypress": "1.0.33",
     "@travi/eslint-config-react": "1.0.73",
