@@ -75,7 +75,7 @@
     "@travi/brand": "1.0.0",
     "@travi/matt.travi.org-components": "4.1.22",
     "@travi/travi.org-theme-components": "1.2.0",
-    "gatsby": "4.9.1",
+    "gatsby": "4.9.2",
     "gatsby-link": "4.9.0",
     "gatsby-plugin-emotion": "7.9.0",
     "gatsby-plugin-google-analytics": "4.9.0",
