@@ -52,7 +52,7 @@
     "@travi/babel-preset": "3.0.80",
     "@travi/eslint-config": "1.0.94",
     "@travi/eslint-config-cypress": "1.0.33",
-    "@travi/eslint-config-react": "1.0.77",
+    "@travi/eslint-config-react": "1.0.78",
     "ban-sensitive-files": "1.9.17",
     "commitlint-config-travi": "1.4.9",
     "cypress": "9.5.1",
