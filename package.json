@@ -46,7 +46,7 @@
   },
   "devDependencies": {
     "@packtracker/webpack-plugin": "2.3.0",
-    "@percy/cli": "1.20.1",
+    "@percy/cli": "1.20.2",
     "@percy/cypress": "3.1.2",
     "@travi/any": "2.1.7",
     "@travi/babel-preset": "3.0.96",
