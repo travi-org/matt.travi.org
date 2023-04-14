@@ -54,7 +54,7 @@
     "@travi/eslint-config-cypress": "1.0.38",
     "@travi/eslint-config-react": "1.0.106",
     "ban-sensitive-files": "1.9.19",
-    "commitlint-config-travi": "1.4.27",
+    "commitlint-config-travi": "1.4.28",
     "cypress": "9.7.0",
     "cz-conventional-changelog": "3.3.0",
     "gatsby-plugin-webpack-bundle-analyser-v2": "1.1.30",
