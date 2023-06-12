@@ -50,7 +50,7 @@
     "@percy/cypress": "3.1.2",
     "@travi/any": "2.1.8",
     "@travi/babel-preset": "3.0.100",
-    "@travi/eslint-config": "3.0.30",
+    "@travi/eslint-config": "3.0.31",
     "@travi/eslint-config-cypress": "1.0.39",
     "@travi/eslint-config-react": "1.0.107",
     "ban-sensitive-files": "1.9.19",
