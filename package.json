@@ -57,7 +57,7 @@
     "commitlint-config-travi": "1.4.49",
     "cypress": "9.7.0",
     "cz-conventional-changelog": "3.3.0",
-    "gatsby-plugin-webpack-bundle-analyser-v2": "1.1.31",
+    "gatsby-plugin-webpack-bundle-analyser-v2": "1.1.32",
     "husky": "8.0.3",
     "is-website-vulnerable": "1.14.8",
     "lockfile-lint": "4.10.5",
