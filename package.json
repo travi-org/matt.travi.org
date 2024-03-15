@@ -70,8 +70,8 @@
   "dependencies": {
     "@emotion/react": "11.11.3",
     "@mui/material": "5.13.6",
-    "@mdx-js/mdx": "1.6.22",
-    "@mdx-js/react": "1.6.22",
+    "@mdx-js/mdx": "3.0.1",
+    "@mdx-js/react": "3.0.1",
     "@travi/brand": "1.0.0",
     "@travi/matt.travi.org-components": "4.1.22",
     "@travi/travi.org-theme-components": "1.2.0",
