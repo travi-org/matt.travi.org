@@ -60,7 +60,7 @@
     "gatsby-plugin-webpack-bundle-analyser-v2": "1.1.32",
     "husky": "8.0.3",
     "is-website-vulnerable": "1.14.8",
-    "lockfile-lint": "4.10.5",
+    "lockfile-lint": "4.13.2",
     "netlify-cli": "15.2.0",
     "npm-run-all2": "5.0.2",
     "remark-cli": "11.0.0",
