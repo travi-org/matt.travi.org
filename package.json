@@ -61,7 +61,7 @@
     "husky": "8.0.3",
     "is-website-vulnerable": "1.14.8",
     "lockfile-lint": "4.13.2",
-    "netlify-cli": "15.2.0",
+    "netlify-cli": "15.11.0",
     "npm-run-all2": "5.0.2",
     "remark-cli": "11.0.0",
     "rimraf": "5.0.5",
