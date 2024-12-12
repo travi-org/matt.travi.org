@@ -14,7 +14,7 @@ jobs:
         uses: actions/setup-node@1a4442cacd436585916779262731d5b162bc6ec7 # v3.8.2
         with:
           node-version: '${{ steps.nvm.outputs.NVMRC }}'
-      - uses: bahmutov/npm-install@237ded403e6012a48281f4572eab0c8eafe55b3f # v1.10.1
+      - uses: bahmutov/npm-install@ec9e87262db2a1be2ca3ceb2d506c413a220542c # v1.10.5
       - name: Percy Snapshots
         run: npm run snapshot
         env:
